@@ -18,7 +18,7 @@ jobs:
           yarn build
       - name: run Lighthouse CI
         run: |
-          yarn global add @lhci/cli@latest
+          npm install -g @lhci/cli@latest
           lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
