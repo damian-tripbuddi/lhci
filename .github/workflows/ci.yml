@@ -19,8 +19,7 @@ jobs:
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@latest
-          lhci collect --additive --settings.configPath=./lighthouserc-mobile.js --url=http://localhost:43583/?mobile
-          lhci collect --additive --settings.configPath=./lighthouserc-desktop.js --url=http://localhost:43583/?desktop
+          lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
           LHCI_SERVER_BASE_URL: ${{ secrets.LHCI_SERVER_BASE_URL }}
