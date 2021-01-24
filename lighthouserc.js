@@ -14,7 +14,9 @@ module.exports = {
       },
     },
     upload: {
-      target: 'temporary-public-storage',
+      target: 'lhci',
+      serverBaseUrl: `${process.env.LHCI_SERVER_BASE_URL}`,
+      token: `${process.env.LHCI_BUILD_TOKEN}`,
     },
   },
 };
