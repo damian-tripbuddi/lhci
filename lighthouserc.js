@@ -3,7 +3,7 @@ module.exports = {
     assert: {
       preset: 'lighthouse:recommended',
       assertions: {
-        'categories:accessibility': off,
+        'categories:accessibility': 'off',
       },
     },
     upload: {
