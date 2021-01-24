@@ -22,3 +22,5 @@ jobs:
           lhci autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          LHCI_SERVER_BASE_URL: ${{ secrets.LHCI_SERVER_BASE_URL }}
+          LHCI_BUILD_TOKEN: ${{ secrets.LHCI_BUILD_TOKEN }}
